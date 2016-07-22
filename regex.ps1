@@ -30,6 +30,7 @@ Foreach-Object {$_ -replace "\sMEDIAN$",""}|
 #Removing directional text at beginning of string
 Foreach-Object {$_ -replace "^1\s\/.\/.\/.\s",""}|
 Foreach-Object {$_ -replace "^1\/.\/..\/.\s",""}|
+Foreach-Object {$_ -replace "^1.\/..\/.\s",""}|
 Foreach-Object {$_ -replace "^1\/.\/.\/.\s",""}|
 Foreach-Object {$_ -replace "^10\/.\/.\/.\s",""}|
 Foreach-Object {$_ -replace "^11\/.\/.\/.\s",""}|
@@ -45,7 +46,24 @@ Foreach-Object {$_ -replace "^12\s\/.\/.\/.\s",""}|
 Foreach-Object {$_ -replace "^12\s\/.\/..\/.\s",""}|
 Foreach-Object {$_ -replace "^12\s.\/.\/.\s",""}|
 Foreach-Object {$_ -replace "^12\s.\/..\/.\s",""}|
+Foreach-Object {$_ -replace "^13\/.\/.\/.\s",""}|
+Foreach-Object {$_ -replace "^13\/.\/..\/.\s",""}|
+Foreach-Object {$_ -replace "^13.\/.\/.\s",""}|
+Foreach-Object {$_ -replace "^13.\/..\/.\s",""}|
+Foreach-Object {$_ -replace "^13\s\/.\/.\/.\s",""}|
+Foreach-Object {$_ -replace "^13\s\/.\/..\/.\s",""}|
+Foreach-Object {$_ -replace "^13\s.\/.\/.\s",""}|
+Foreach-Object {$_ -replace "^13\s.\/..\/.\s",""}|
+Foreach-Object {$_ -replace "^14\/.\/.\/.\s",""}|
+Foreach-Object {$_ -replace "^14\/.\/..\/.\s",""}|
+Foreach-Object {$_ -replace "^14.\/.\/.\s",""}|
+Foreach-Object {$_ -replace "^14.\/..\/.\s",""}|
+Foreach-Object {$_ -replace "^14\s\/.\/.\/.\s",""}|
+Foreach-Object {$_ -replace "^14\s\/.\/..\/.\s",""}|
+Foreach-Object {$_ -replace "^14\s.\/.\/.\s",""}|
+Foreach-Object {$_ -replace "^14\s.\/..\/.\s",""}|
 Foreach-Object {$_ -replace "^1.\/.\/.\s",""}|
+Foreach-Object {$_ -replace "^1.\/..\/.\/.\s",""}|
 Foreach-Object {$_ -replace "^1\s.\/.\/.\/.\s",""}|
 Foreach-Object {$_ -replace "^1\s.\/.\/.\s",""}|
 Foreach-Object {$_ -replace "^1\s.\/.\s",""}|
@@ -64,6 +82,7 @@ Foreach-Object {$_ -replace "\sON\s"," AND "}|
 Foreach-Object {$_ -replace "\sIN\s"," AND "}|
 
 #Removing residual clutter
+Foreach-Object {$_ -replace "\s.\/.$",""}|
 Foreach-Object {$_ -replace "\,",""}|
 Foreach-Object {$_ -replace "\-",""}|
 Foreach-Object {$_ -replace "\&","AND"}|

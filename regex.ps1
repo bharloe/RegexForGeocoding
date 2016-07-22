@@ -32,6 +32,10 @@ Foreach-Object {$_ -replace "^1\s\/.\/.\/.\s",""}|
 Foreach-Object {$_ -replace "^1\/.\/..\/.\s",""}|
 Foreach-Object {$_ -replace "^1.\/..\/.\s",""}|
 Foreach-Object {$_ -replace "^1\/.\/.\/.\s",""}|
+Foreach-Object {$_ -replace "^2\s\/.\/.\/.\s",""}|
+Foreach-Object {$_ -replace "^2\/.\/..\/.\s",""}|
+Foreach-Object {$_ -replace "^2.\/..\/.\s",""}|
+Foreach-Object {$_ -replace "^2\/.\/.\/.\s",""}|
 Foreach-Object {$_ -replace "^10\/.\/.\/.\s",""}|
 Foreach-Object {$_ -replace "^11\/.\/.\/.\s",""}|
 Foreach-Object {$_ -replace "^11\/.\/..\/.\s",""}|
